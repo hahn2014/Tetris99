@@ -20,13 +20,9 @@ The faithful recreation of the switch game recreated using `Unity`.
 
 ## Demo
 COMING SOON
-[comment]: <>[![Tetris99 Demo - Youtube](http://i.imgur.com/bHjlJfG.jpg)](https://www.youtube.com/watch?v=o99zpLsM-ZI)
 
 ## Screenshots
 COMING SOON
-[comment]: <>| ![Screen 1](http://i.imgur.com/3MzfmbT.jpg) | ![Screen 2](http://i.imgur.com/4OgIByR.png) |
-[comment]: <>|---------------------------------------------|---------------------------------------------|
-[comment]: <>| ![Screen 3](http://i.imgur.com/PFQJjE8.png) | ![Screen 4](http://i.imgur.com/lV4aIur.png) |
 
 ## Game Features
 
