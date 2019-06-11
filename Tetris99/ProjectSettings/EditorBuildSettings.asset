@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Online99.unity
+    guid: 94729fea5334b384bbf1d38df0eb5cc0
+  - enabled: 1
+    path: Assets/Scenes/Offline99.unity
+    guid: 879574cebb8958140b14e02403044089
+  - enabled: 1
+    path: Assets/Scenes/OfflineMarathon.unity
+    guid: 0986811886a23f4459c329b9b7b0d5f7
   m_configObjects: {}
