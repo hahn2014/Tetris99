@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class BlockSpawner : MonoBehaviour {
 
+    public BlockQueue queue;
     private float update;
-    public GameObject[] groups;
+
+    void Start() {
+        if (queue == null)
+            queue = GameObject.Find("BlockQueue").GetComponent<BlockQueue>();
+        queue.generateQueue();
+    }
 
     public void spawnNext() {
-        int i = Random.Range(0, groups.Length);
-        Debug.Log(groups[i].name + " has been spawned.");
-        Instantiate(groups[i], transform.position, Quaternion.identity);
+        GameObject i = queue.blocks[0];
+        Debug.Log(i.name + " has been spawned.");
+        Instantiate(i, transform.position, Quaternion.identity);
+        queue.updateQueue();
     }
 
     void Update() {
