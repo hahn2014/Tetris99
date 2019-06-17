@@ -14,9 +14,9 @@ public class BlockSpawner : MonoBehaviour {
     }
 
     public void spawnNext() {
-        GameObject i = queue.blocks[0];
-        Debug.Log(i.name + " has been spawned.");
-        Instantiate(i, transform.position, Quaternion.identity);
+        //GameObject i = queue.blocks[0];
+        //Debug.Log(i.name + " has been spawned.");
+    //    Instantiate(i, transform.position, Quaternion.identity);
         queue.updateQueue();
     }
 
