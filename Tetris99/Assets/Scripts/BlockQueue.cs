@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockQueue : MonoBehaviour {
     public int[] queue;
     public Object[] sprites;
+
     private SpriteRenderer sr;
     private Sprite IBlock;
     private Sprite JBlock;
@@ -23,7 +24,6 @@ public class BlockQueue : MonoBehaviour {
         OBlock = Resources.Load<Sprite>("OBlockSprite");
         TBlock = Resources.Load<Sprite>("TBlockSprite");
         Debug.Log("Sprites loaded");
-
     }
 
     public void updateQueue() {
@@ -31,6 +31,7 @@ public class BlockQueue : MonoBehaviour {
     }
 
     private void rotateQueue() {
+        Debug.Log("Rotating Queue:");
         setQueue(0, queue[1]);
         setQueue(1, queue[2]);
         setQueue(2, queue[3]);
@@ -40,17 +41,20 @@ public class BlockQueue : MonoBehaviour {
     }
 
     public void generateQueue() {
+        Debug.Log("Generating Queue:");
         for (int i = 0; i < 6; i++) {
             setQueue(i, Random.Range(1, 7));
-            Debug.Log("queue[" + i + "] = " + queue[i]);
         }
     }
 
     private void setQueue(int index, int type) {
         queue[index] = type;
+        Debug.Log("queue[" + index + "] = " + queue[index]);
+        /*GameObject spriteObj;
         switch (type) {
             case 1:
-                sr = (sprites[index] as GameObject).GetComponentInChildren<SpriteRenderer>();
+                spriteObj = sprites[index];
+                sr = spriteObj.GetComponentInChildren<SpriteRenderer>();
                 sr.sprite = IBlock;
                 break;
             case 2:
@@ -82,5 +86,6 @@ public class BlockQueue : MonoBehaviour {
                 sr.sprite = IBlock;
                 break;
         }
-    }
+        Debug.Log("SR = " + sr.sprite);
+    }*/}
 }
